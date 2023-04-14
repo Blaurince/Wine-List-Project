@@ -3,8 +3,9 @@ body {
   color: wheat;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
+  text-align: center;
 
 }
 
@@ -27,7 +28,7 @@ body {
 .wine-card img {
   height: 300px;
   max-width: 70%;
-  
+
 }
 
 button{

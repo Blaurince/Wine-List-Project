@@ -14,12 +14,12 @@ export default function WineList() {
 
 
     return (
-     <section className="WineList">
+     <section className="wine-list">
         {(!theWines)
         
         ? <button onClick={getWines}>Get Wine List</button>
         : theWines.map(wine => (
-            <div key={wine.id} className="WIne-card">
+            <div key={wine.id} className="wine-card">
             <h2>{wine.wine}</h2>
             <img src={wine.image} alt=""/>
             </div>
