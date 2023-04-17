@@ -1,6 +1,6 @@
 
 import { useState } from "react"
-
+import WineCard from "./WineCard"
 
 export default function WineList() {
     const [theWines, setTheWines] = useState()
