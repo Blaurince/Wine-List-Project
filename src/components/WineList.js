@@ -18,15 +18,12 @@ export default function WineList() {
         {(!theWines)
         
         ? <button onClick={getWines}>Get Wine List</button>
-        : theWines.map(wine => (
-            <div key={wine.id} className="wine-card">
-            <h2>{wine.wine}</h2>
-            <img src={wine.image} alt=""/>
-            </div>
+        : theWines.map(wine  => (
+        <WineCard key={wine.id} wine={wine} />
+        
         ))
-        
         }
-        
-        </section>
-    )
+    </section>
+    
+    )       
 }
